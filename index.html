@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PulseAI - Smart Heart Risk Detection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>PulseAI</header>
+  
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Risk Analysis</a>
+    <a href="#">Contact</a>
+  </nav>
+  
+  <section class="hero">
+    <h1>Predict Heart Risks with AI</h1>
+    <p>Empowering early detection through Artificial Intelligence and Machine Learning.</p>
+    <button onclick="document.getElementById('form').scrollIntoView({behavior: 'smooth'})">Try Heart Risk Test</button>
+  </section>
+   
+  <section class="features">
+    <div class="feature-box">
+      <h3>AI Prediction</h3>
+      <p>Advanced ML models that identify potential heart risks based on symptoms and patterns.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Personalized Reports</h3>
+      <p>Receive detailed AI-generated insights and preventive health recommendations.</p>
+    </div>
+  </section>
+
+  <!-- Health Risk Analysis Form -->
+  <section class="form-section" id="form">
+    <h2>Health Risk Analysis Form</h2>
+    <form id="healthForm">`r age" required>
+
+      <label>❷ What’s your gender?</label>
+      <select id="sex" required>
+        <option value="">Select</option>
+        <option value="1">Male</option>
+        <option value="0">Female</option>
+      </select>
+
+      <label>❸ Do you ever feel chest pain or tightness?</label>
+      <select id="cp" required>
+        <option value="">Select</option>
+        <option value="0">No</option>
+        <option value="1">Occasionally</option>
+        <option value="2">Often</option>
+        <option value="3">Severe</option>
+      </select>
+
+      <label>❹ Do you have high blood pressure?</label>
+      <select id="trestbps" required>
+        <option value="">Select</option>
+        <option value="120">No (around 120 mmHg)</option>
+        <option value="140">Slightly high (around 140 mmHg)</option>
+        <option value="160">Very high (around 160 mmHg)</option>
+      </select>
+
+      <label>❺ Do you eat oily/fast food often?</label>
+      <select id="chol" required>
+        <option value="">Select</option>
+        <option value="180">Rarely</option>
+        <option value="220">Sometimes</option>
+        <option value="260">Often</option>
+      </select>
+
+      <label>❻ Do you have diabetes or high sugar?</label>
+      <select id="fbs" required>
+        <option value="">Select</option>
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+
+      <label>❼ Any heart checkup abnormalities found before?</label>
+      <select id="restecg" required>
+        <option value="">Select</option>
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+
+      <label>❽ How active are you daily?</label>
+      <select id="thalach" required>
+        <option value="">Select</option>
+        <option value="100">Low activity</option>
+        <option value="130">Medium activity</option>
+        <option value="160">High activity</option>
+      </select>
+
+      <label>❾ Do you feel pain while exercising?</label>  
+      <select id="exang" required>
+        <option value="">Select</option>
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+
+      <label>❿ Do you feel tired after light exercise?</label>
+      <select id="oldpeak" required>
+        <option value="">Select</option>
+        <option value="0.0">No</option>
+        <option value="1.0">Slight</option>
+        <option value="2.0">Yes</option>
+      </select>
+
+      <label>⓫ How’s your physical endurance?</label>
+      <select id="slope" required>
+        <option value="">Select</option>
+        <option value="0">Low</option>
+        <option value="1">Normal</option>
+        <option value="2">Good</option>
+      </select>
+
+      <label>⓬ Do you have any diagnosed heart blockages?</label>
+      <select id="ca" required>
+        <option value="">Select</option>
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+
+      <label>⓭ Any blood-related disorder (like Thalassemia)?</label>
+      <select id="thal" required>
+        <option value="">Select</option>
+        <option value="1">No</option>
+        <option value="2">Mild</option>
+        <option value="3">Severe</option>
+      </select>
+
+      <button class="submit-btn" type="submit">Analyze Health Risk</button>
+    </form>
+  </section>
+
+  <footer>
+    PulseAI | Designed with ❤️ by Team - HackFinity
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
